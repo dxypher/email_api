@@ -1,0 +1,7 @@
+This is an API endpoint created using Ruby and Sinatra that sends an email when someone submits a POST request with JSON content.
+
+It can be tested using CURL:
+
+curl -d '{ "to": "Your Name <youremail@address.com>", "subject": "hello world", "body": "Hi John! Sending you an email via this awesome API I just found on the interwebs." }' http://emailapi-env-tq3jidzhgm.elasticbeanstalk.com/
+
+Just a heads up, when I tested this the email ended up in the spam folder half the time.

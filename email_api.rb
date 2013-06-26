@@ -1,11 +1,7 @@
 require 'sinatra'
 require 'json'
 
-get '/' do
-  "Hello World!"
-end
-
-post '/email' do
+post '/' do
   params = JSON.parse(request.env["rack.input"].read)  
   Pony.mail :to => params["to"],
               :from => "noreply@example.com",
